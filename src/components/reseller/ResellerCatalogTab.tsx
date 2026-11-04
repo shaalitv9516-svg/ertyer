@@ -750,17 +750,17 @@ ${desc ? `\n📝 পণ্যের বিবরণ:\n${desc}\n` : ''}
         {/* 1. Hero Showcase Banner */}
         <HeroSection />
 
-        {/* 2. Trust / Feature Badges Strip (Single Shape Container with 1-Line Mobile Text & Lightly Highlighted Border) */}
+        {/* 2. Trust / Feature Badges Strip (Single Shape Container with Unclipped Bengali Accents & Clean Mobile Text) */}
         <div className="w-full max-w-[1920px] mx-auto px-3 sm:px-6 lg:px-8 xl:px-10 py-1 sm:py-1.5">
-          <div className="bg-white rounded-xl sm:rounded-2xl border border-emerald-500/50 hover:border-emerald-500 py-1.5 sm:py-2 px-1 sm:px-3 shadow-xs grid grid-cols-4 divide-x divide-slate-100 items-center">
+          <div className="bg-white rounded-xl sm:rounded-2xl border border-emerald-500/50 hover:border-emerald-500 py-2 sm:py-2.5 px-1 sm:px-3 shadow-xs grid grid-cols-4 divide-x divide-slate-100 items-center overflow-visible">
             
             {/* Badge 1: Reliable Products */}
-            <div className="group flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-0.5 sm:gap-2 p-0.5 sm:p-1.5 rounded-lg hover:bg-emerald-50/60 transition-all duration-300 cursor-pointer">
+            <div className="group flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-1 sm:gap-2 p-0.5 sm:p-1.5 rounded-lg hover:bg-emerald-50/60 transition-all duration-300 cursor-pointer">
               <div className="w-5.5 h-5.5 sm:w-7.5 sm:h-7.5 rounded-lg bg-emerald-50/80 flex items-center justify-center shrink-0 border border-emerald-200/80 group-hover:bg-[#009245] group-hover:text-white transition-all duration-300 shadow-3xs">
                 <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#009245] group-hover:text-white transition-colors duration-300" />
               </div>
-              <div className="min-w-0 text-center sm:text-left">
-                <h4 className="text-[8px] min-[360px]:text-[9px] min-[400px]:text-[10px] sm:text-xs md:text-sm font-extrabold text-slate-900 group-hover:text-[#009245] leading-tight transition-colors duration-300 whitespace-nowrap truncate">
+              <div className="min-w-0 text-center sm:text-left pt-0.5">
+                <h4 className="text-[7.5px] min-[350px]:text-[8.5px] min-[400px]:text-[9.5px] sm:text-xs md:text-sm font-extrabold text-slate-900 group-hover:text-[#009245] leading-normal sm:leading-relaxed transition-colors duration-300 whitespace-nowrap overflow-visible">
                   {lang === 'bn' ? 'নির্ভরযোগ্য পণ্য' : 'Authentic'}
                 </h4>
                 <p className="text-[7.5px] sm:text-[10px] text-slate-500 mt-0.5 hidden md:block">
@@ -770,12 +770,12 @@ ${desc ? `\n📝 পণ্যের বিবরণ:\n${desc}\n` : ''}
             </div>
 
             {/* Badge 2: Nationwide Delivery */}
-            <div className="group flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-0.5 sm:gap-2 p-0.5 sm:p-1.5 rounded-lg hover:bg-blue-50/60 transition-all duration-300 cursor-pointer">
+            <div className="group flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-1 sm:gap-2 p-0.5 sm:p-1.5 rounded-lg hover:bg-blue-50/60 transition-all duration-300 cursor-pointer">
               <div className="w-5.5 h-5.5 sm:w-7.5 sm:h-7.5 rounded-lg bg-blue-50/80 flex items-center justify-center shrink-0 border border-blue-200/80 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-3xs">
                 <Truck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600 group-hover:text-white transition-colors duration-300" />
               </div>
-              <div className="min-w-0 text-center sm:text-left">
-                <h4 className="text-[8px] min-[360px]:text-[9px] min-[400px]:text-[10px] sm:text-xs md:text-sm font-extrabold text-slate-900 group-hover:text-blue-600 leading-tight transition-colors duration-300 whitespace-nowrap truncate">
+              <div className="min-w-0 text-center sm:text-left pt-0.5">
+                <h4 className="text-[7.5px] min-[350px]:text-[8.5px] min-[400px]:text-[9.5px] sm:text-xs md:text-sm font-extrabold text-slate-900 group-hover:text-blue-600 leading-normal sm:leading-relaxed transition-colors duration-300 whitespace-nowrap overflow-visible">
                   {lang === 'bn' ? 'সারা দেশে ডেলিভারি' : 'Nationwide'}
                 </h4>
                 <p className="text-[7.5px] sm:text-[10px] text-slate-500 mt-0.5 hidden md:block">
@@ -785,12 +785,12 @@ ${desc ? `\n📝 পণ্যের বিবরণ:\n${desc}\n` : ''}
             </div>
 
             {/* Badge 3: Easy Return */}
-            <div className="group flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-0.5 sm:gap-2 p-0.5 sm:p-1.5 rounded-lg hover:bg-amber-50/60 transition-all duration-300 cursor-pointer">
+            <div className="group flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-1 sm:gap-2 p-0.5 sm:p-1.5 rounded-lg hover:bg-amber-50/60 transition-all duration-300 cursor-pointer">
               <div className="w-5.5 h-5.5 sm:w-7.5 sm:h-7.5 rounded-lg bg-amber-50/80 flex items-center justify-center shrink-0 border border-amber-200/80 group-hover:bg-amber-600 group-hover:text-white transition-all duration-300 shadow-3xs">
                 <RotateCcw className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-600 group-hover:text-white transition-colors duration-300" />
               </div>
-              <div className="min-w-0 text-center sm:text-left">
-                <h4 className="text-[8px] min-[360px]:text-[9px] min-[400px]:text-[10px] sm:text-xs md:text-sm font-extrabold text-slate-900 group-hover:text-amber-600 leading-tight transition-colors duration-300 whitespace-nowrap truncate">
+              <div className="min-w-0 text-center sm:text-left pt-0.5">
+                <h4 className="text-[7.5px] min-[350px]:text-[8.5px] min-[400px]:text-[9.5px] sm:text-xs md:text-sm font-extrabold text-slate-900 group-hover:text-amber-600 leading-normal sm:leading-relaxed transition-colors duration-300 whitespace-nowrap overflow-visible">
                   {lang === 'bn' ? 'সহজ রিটার্ন' : 'Easy Return'}
                 </h4>
                 <p className="text-[7.5px] sm:text-[10px] text-slate-500 mt-0.5 hidden md:block">
@@ -800,12 +800,12 @@ ${desc ? `\n📝 পণ্যের বিবরণ:\n${desc}\n` : ''}
             </div>
 
             {/* Badge 4: 24/7 Support */}
-            <div className="group flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-0.5 sm:gap-2 p-0.5 sm:p-1.5 rounded-lg hover:bg-purple-50/60 transition-all duration-300 cursor-pointer">
+            <div className="group flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left gap-1 sm:gap-2 p-0.5 sm:p-1.5 rounded-lg hover:bg-purple-50/60 transition-all duration-300 cursor-pointer">
               <div className="w-5.5 h-5.5 sm:w-7.5 sm:h-7.5 rounded-lg bg-purple-50/80 flex items-center justify-center shrink-0 border border-purple-200/80 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300 shadow-3xs">
                 <Headphones className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-purple-600 group-hover:text-white transition-colors duration-300" />
               </div>
-              <div className="min-w-0 text-center sm:text-left">
-                <h4 className="text-[8px] min-[360px]:text-[9px] min-[400px]:text-[10px] sm:text-xs md:text-sm font-extrabold text-slate-900 group-hover:text-purple-600 leading-tight transition-colors duration-300 whitespace-nowrap truncate">
+              <div className="min-w-0 text-center sm:text-left pt-0.5">
+                <h4 className="text-[7.5px] min-[350px]:text-[8.5px] min-[400px]:text-[9.5px] sm:text-xs md:text-sm font-extrabold text-slate-900 group-hover:text-purple-600 leading-normal sm:leading-relaxed transition-colors duration-300 whitespace-nowrap overflow-visible">
                   {lang === 'bn' ? '২৪/৭ সাপোর্ট' : '24/7 Support'}
                 </h4>
                 <p className="text-[7.5px] sm:text-[10px] text-slate-500 mt-0.5 hidden md:block">
@@ -899,7 +899,7 @@ ${desc ? `\n📝 পণ্যের বিবরণ:\n${desc}\n` : ''}
                   <div
                     key={cat.id}
                     onClick={() => openResellerCatalog(cat.slug as any)}
-                    className={`relative ${theme.bg} ${theme.border} rounded-xl sm:rounded-2xl p-3.5 sm:p-4.5 md:p-6 lg:p-6.5 flex items-center justify-between gap-3 sm:gap-4 md:gap-5 min-h-[140px] sm:min-h-[165px] md:min-h-[210px] lg:min-h-[225px] transition-all duration-300 hover:shadow-md ${theme.hoverBorder} hover:-translate-y-0.5 active:scale-[0.99] cursor-pointer group overflow-hidden`}
+                    className={`relative ${theme.bg} ${theme.border} rounded-xl sm:rounded-2xl p-3.5 sm:p-4.5 md:p-5.5 lg:p-6 flex items-center justify-between gap-3 sm:gap-4 md:gap-5 min-h-[140px] sm:min-h-[165px] md:min-h-[200px] lg:min-h-[215px] transition-all duration-300 hover:shadow-md ${theme.hoverBorder} hover:-translate-y-0.5 active:scale-[0.99] cursor-pointer group overflow-hidden`}
                   >
                     {/* Interior Ambient Blurred Glow Orbs for Glassmorphism Effect */}
                     <div className={`absolute -right-8 -bottom-8 w-36 h-36 md:w-44 md:h-44 rounded-full ${theme.glowOrb1} blur-2xl pointer-events-none transition-all group-hover:scale-125 duration-500`} />
@@ -907,11 +907,11 @@ ${desc ? `\n📝 পণ্যের বিবরণ:\n${desc}\n` : ''}
 
                     <div className="relative z-10 flex-1 flex flex-col justify-between h-full py-0.5 min-w-0">
                       <div className="space-y-1.5 md:space-y-2">
-                        <div className="flex items-center justify-between gap-2 flex-nowrap min-w-0 w-full mb-1">
-                          <h3 className={`text-xs sm:text-base md:text-lg lg:text-xl font-black ${theme.titleColor} uppercase tracking-tight leading-tight truncate min-w-0 flex-1 group-hover:opacity-90 transition-opacity`}>
+                        <div className="flex items-center justify-between gap-1.5 flex-wrap sm:flex-nowrap min-w-0 w-full mb-1">
+                          <h3 className={`text-xs sm:text-sm md:text-base lg:text-lg font-black ${theme.titleColor} uppercase tracking-tight leading-snug break-words group-hover:opacity-90 transition-opacity`}>
                             {cat.name}
                           </h3>
-                          <span className={`${theme.badgeBg} border ${theme.badgeBorder} ${theme.badgeText} text-[10px] sm:text-xs font-black px-1.5 sm:px-2 py-0.5 md:px-2.5 md:py-1 rounded-md shadow-3xs shrink-0 whitespace-nowrap`}>
+                          <span className={`${theme.badgeBg} border ${theme.badgeBorder} ${theme.badgeText} text-[9.5px] sm:text-xs font-black px-1.5 sm:px-2 py-0.5 rounded-md shadow-3xs shrink-0 whitespace-nowrap`}>
                             {lang === 'bn' ? `${count} টি পণ্য` : `${count} Products`}
                           </span>
                         </div>
@@ -928,10 +928,10 @@ ${desc ? `\n📝 পণ্যের বিবরণ:\n${desc}\n` : ''}
                             e.stopPropagation();
                             openResellerCatalog(cat.slug as any);
                           }}
-                          className={`inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 rounded-lg sm:rounded-xl ${theme.btnBg} text-white text-[11px] sm:text-xs md:text-sm font-black transition-all duration-200 shadow-2xs hover:shadow-sm hover:scale-105 active:scale-95 cursor-pointer`}
+                          className={`inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 md:px-4.5 md:py-2 rounded-lg sm:rounded-xl ${theme.btnBg} text-white text-[10.5px] sm:text-xs md:text-sm font-black transition-all duration-200 shadow-2xs hover:shadow-sm hover:scale-105 active:scale-95 cursor-pointer whitespace-nowrap shrink-0`}
                         >
-                          <span>{lang === 'bn' ? 'এক্সপ্লোর করুন' : 'Explore'}</span>
-                          <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1.5 transition-transform duration-300" />
+                          <span className="whitespace-nowrap">{lang === 'bn' ? 'এক্সপ্লোর করুন' : 'Explore'}</span>
+                          <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1.5 transition-transform duration-300 shrink-0" />
                         </button>
                       </div>
                     </div>
@@ -941,7 +941,7 @@ ${desc ? `\n📝 পণ্যের বিবরণ:\n${desc}\n` : ''}
                         <IconTag className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5" />
                       </div>
                       {cat.imageUrl && (
-                        <div className="w-22 h-18 sm:w-32 sm:h-24 md:w-40 md:h-32 lg:w-44 lg:h-34 rounded-lg sm:rounded-xl overflow-hidden border border-white/90 shadow-2xs shrink-0 bg-white flex items-center justify-center">
+                        <div className="w-22 h-18 sm:w-32 sm:h-24 md:w-38 md:h-30 lg:w-42 lg:h-32 rounded-lg sm:rounded-xl overflow-hidden border border-white/90 shadow-2xs shrink-0 bg-white flex items-center justify-center">
                           <img
                             src={cat.imageUrl}
                             alt={cat.name}
